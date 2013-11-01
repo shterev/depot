@@ -1,7 +1,7 @@
 Depot::Application.routes.draw do
-scope "/:locale", :as => 'locale' do
+
   resources :products
-end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
