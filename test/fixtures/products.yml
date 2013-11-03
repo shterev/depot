@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-   title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
-
-two:
-   title: MyString
-  description: MyText
-  image_url: MyString
+ruby:
+  title: Programming ruby
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, id
+  image_url: image.jpg
   price: 9.99
