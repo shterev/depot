@@ -3,7 +3,7 @@
 <head>
   <title>Pragprog Books Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%#= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body id="store">
@@ -14,9 +14,10 @@
 
   <div id="columns">
     <div id="side">
-      <a href="http://www....">Home</a><br />
-      <a href="http://www..../faq">Questions</a><br /> <a href="http://www..../news">News</a><br />
-      <a href="http://www..../contact">Contact</a><br />
+      <%= link_to 'Home', store_path %><br />
+      <%= link_to 'Products', products_path %><br />
+      <%= link_to 'Add new product', new_product_path %><br />
+      <%= link_to 'Shoping Cart', carts_path %><br />
     </div>
     <div id="main">
       <%= yield %>
