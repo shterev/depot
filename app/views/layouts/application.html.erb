@@ -18,6 +18,9 @@
       <%= link_to 'Products', products_path %><br />
       <%= link_to 'Add new product', new_product_path %><br />
       <%= link_to 'Shoping Cart', carts_path %><br />
+      <div id="cart">
+        <%= render @cart %>
+      </div>
     </div>
     <div id="main">
       <%= yield %>

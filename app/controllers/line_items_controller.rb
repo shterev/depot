@@ -34,7 +34,7 @@ class LineItemsController < ApplicationController
 
 
     if @line_item.save
-      redirect_to @line_item.cart
+      redirect_to store_url
     else
       render action: 'new'
     end
